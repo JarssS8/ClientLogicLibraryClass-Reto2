@@ -3,9 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package utillities;
+package utillities.interfaces;
 
-import utillities.User;
+import utillities.beans.User;
+import utillities.beans.User;
 
 /**
  * This is the interface of both sides, client and server. 
