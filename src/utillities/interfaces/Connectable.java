@@ -5,7 +5,9 @@
  */
 package utillities.interfaces;
 
+
 import utillities.beans.User;
+
 
 /**
  * This is the interface of both sides, client and server. 
