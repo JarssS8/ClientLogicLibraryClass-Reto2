@@ -3,9 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package utillities;
+package utillities.beans;
 
-import utillities.User;
 
 /**
  * The class will make the structure that will be sent via socket to comunicate client and server.
