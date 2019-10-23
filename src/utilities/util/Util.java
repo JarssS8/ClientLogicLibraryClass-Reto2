@@ -1,4 +1,4 @@
-package utillities.util;
+package utilities.util;
 
 import java.io.BufferedReader;
 import java.io.EOFException;

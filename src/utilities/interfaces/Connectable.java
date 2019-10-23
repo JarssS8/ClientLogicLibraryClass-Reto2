@@ -3,11 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package utillities.interfaces;
+package utilities.interfaces;
 
 
-import utillities.beans.User;
-import utilities.exception.*;
+import utilities.exception.LogicException;
+import utilities.exception.WrongPasswordException;
+import utilities.exception.LoginNotFoundException;
+import utilities.exception.LoginAlreadyTakenException;
+import utilities.beans.User;
 
 
 /**
