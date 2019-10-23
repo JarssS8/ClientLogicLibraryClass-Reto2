@@ -7,6 +7,7 @@ package utillities.interfaces;
 
 
 import utillities.beans.User;
+import utilities.exception.*;
 
 
 /**
@@ -14,8 +15,8 @@ import utillities.beans.User;
  * @author Adrian
  */
 public interface Connectable {
-    public void logIn(User user);
-    public void signUp(User user);
-    public void logOut(User user);
+    public User logIn(User user) throws LoginNotFoundException,WrongPasswordException,LogicException;
+    public void signUp(User user) throws LoginAlreadyTakenException,LogicException;
+    public void logOut(User user) throws LogicException;
     
 }
