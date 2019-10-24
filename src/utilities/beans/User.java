@@ -5,13 +5,14 @@
  */
 package utilities.beans;
 
+import java.io.Serializable;
 import java.sql.Timestamp;
 
 /**
  * The class contains the data you need to store from a user.
  * @author aimar
  */
-public class User {
+public class User implements Serializable{
     
     private int id;
     private String login;
