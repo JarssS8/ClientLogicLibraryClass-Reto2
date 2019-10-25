@@ -5,12 +5,14 @@
  */
 package utilities.beans;
 
+import java.io.Serializable;
+
 
 /**
  * The class will make the structure that will be sent via socket to comunicate client and server.
  * @author aimar
  */
-public class Message {
+public class Message implements Serializable{
     
     private User user;
     private String type;
