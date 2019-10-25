@@ -14,6 +14,10 @@ public class Message {
     
     private User user;
     private String type;
+    
+    public static final String LOGIN_MESSAGE = "Login";
+    public static final String SIGNUP_MESSAGE = "SignUp";
+    public static final String LOGOUT_MESSAGE = "LogOut";
 
     /**
      * @return the user
