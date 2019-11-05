@@ -6,12 +6,11 @@
 package utilities.interfaces;
 
 
-import utilities.exception.LogicException;
 import utilities.exception.WrongPasswordException;
 import utilities.exception.LoginNotFoundException;
 import utilities.exception.LoginAlreadyTakenException;
 import utilities.beans.User;
-import utilities.exception.DBException;
+import utilities.exception.ServerConnectionErrorException;
 
 
 /**
@@ -19,8 +18,7 @@ import utilities.exception.DBException;
  * @author Adrian
  */
 public interface Connectable {
-    public User logIn(User user) throws LoginNotFoundException,WrongPasswordException,LogicException,DBException;
-    public User signUp(User user) throws LoginAlreadyTakenException,LogicException,DBException;
-    public void logOut(User user) throws LogicException,DBException;
-    public String getMessage();
+    public User logIn(User user) throws LoginNotFoundException,WrongPasswordException,ServerConnectionErrorException;
+    public User signUp(User user) throws LoginAlreadyTakenException,ServerConnectionErrorException;
+    public void logOut(User user) throws ServerConnectionErrorException;
 }
