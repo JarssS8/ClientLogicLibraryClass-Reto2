@@ -277,7 +277,7 @@ public class Util {
     public static boolean validarEmail(String email) {
 
         //String regex = "^[a-zA-Z0-9]+(?:\\.[a-zA-Z0-9]+){1,40}\\@[a-zA-Z0-9\\-]{0,30}\\.[a-zA-Z]{2,4}$";
-        String regex = "^[a-zA-Z0-9\\.\\-\\_]{1,40}\\@[a-zA-Z0-9\\-]{0,30}\\.[a-zA-Z]{2,4}$";
+        String regex = "^[a-zA-Z0-9\\.\\-\\_]{1,20}\\@[a-zA-Z0-9\\-]{1,20}\\.[a-zA-Z]{2,4}$";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(email);
 
