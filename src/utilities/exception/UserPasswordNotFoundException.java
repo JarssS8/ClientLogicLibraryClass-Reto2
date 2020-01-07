@@ -9,13 +9,13 @@ package utilities.exception;
  *
  * @author Gaizka Andres
  */
-public class WrongPasswordException extends Exception {
+public class UserPasswordNotFoundException extends Exception {
 
     /**
      * Creates a new instance of <code>WrongPasswordException</code> without
      * detail message.
      */
-    public WrongPasswordException() {
+    public UserPasswordNotFoundException() {
     }
 
     /**
@@ -24,7 +24,7 @@ public class WrongPasswordException extends Exception {
      *
      * @param msg the detail message.
      */
-    public WrongPasswordException(String msg) {
+    public UserPasswordNotFoundException(String msg) {
         super(msg);
     }
 }
